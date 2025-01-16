@@ -7,27 +7,28 @@
 }
 
 body {
- font-family: 'Poppins', sans-serif;
- background-color: #7295b8;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- min-height: 100vh;
- margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #7295b8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 a {
   color: #7295b8;
   font-weight: bold;
 }
+
 .container {
- background-color: rgb(216, 208, 208);
- box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3);
- max-width: 90%;
- min-height: 12.5rem;
- margin: auto;
- padding: 2rem;
+  background-color: rgb(216, 208, 208);
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  min-height: 12.5rem;
+  margin: auto;
+  padding: 2rem;
 }
 
 h1 {
@@ -55,18 +56,17 @@ small {
   line-height: 1.5;
   opacity: 0.6;
 }
+
 .topic {
   padding: 1.4rem;
   width: 85%;
-  border-radius:5rem;
-  border: 0.1rem solid #7295b8;
+  border-radius: 5rem;
   border: none;
   font-size: 1.6rem;
 }
 
 button {
-  padding: 1.4rem, 2.4rem;
-  border: 0.1rem solid rgba(39, 33,66, 0.5);
+  padding: 1.4rem 2.4rem;
   border: none;
   font-size: 1.6rem;
   border-radius: 5rem;
@@ -78,29 +78,28 @@ button {
   margin-right: 0.7rem;
 }
 
+button:hover {
+  background-color: #567a9b;
+  color: white;
+}
+
 .poem {
   font-size: 1.4rem;
   padding: 2rem;
   line-height: 1.5;
-  
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 
 .generating {
   animation: blink-animation 1s steps(5, start) infinite;
-} 
+}
 
 @keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
   }
@@ -108,16 +107,38 @@ footer {
 
 @media (max-width: 76.8rem) {
   h1 {
-      font-size: 1.8rem;
-      letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
   }
   .topic, button {
-      font-size: 1.4rem;
+    font-size: 1.4rem;
   }
   small {
-      font-size: 1rem;
+    font-size: 1rem;
   }
   footer {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .form-container {
+    padding: 1.5rem;
+  }
+  .topic, button {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .poem {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+  footer {
+    margin-top: 4rem;
   }
 }
