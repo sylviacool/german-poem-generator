@@ -72,6 +72,7 @@ button {
   background-color: #7295b8;
   cursor: pointer;
   transition: 0.5s ease-out;
+  margin-right: 0.7rem;
 }
 
 .poem {
